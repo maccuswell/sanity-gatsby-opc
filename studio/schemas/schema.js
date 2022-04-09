@@ -9,6 +9,11 @@ import category from './documents/category'
 import person from './documents/person'
 import sampleProject from './documents/sampleProject'
 import siteSettings from './documents/siteSettings'
+import organization from './documents/organization';
+import diy from './documents/diy';
+import impact from './documents/impact';
+import action from './documents/action';
+
 
 // Object types
 import bioPortableText from './objects/bioPortableText'
@@ -16,6 +21,7 @@ import figure from './objects/figure'
 import projectMember from './objects/projectMember'
 import projectPortableText from './objects/projectPortableText'
 import simplePortableText from './objects/simplePortableText'
+
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -36,6 +42,10 @@ export default createSchema({
     category,
     person,
     sampleProject,
+    organization,
+    action,
+    impact,
+    diy,
     siteSettings
   ])
 })
