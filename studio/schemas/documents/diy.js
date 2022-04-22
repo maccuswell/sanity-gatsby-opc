@@ -10,6 +10,11 @@ export default {
       title: 'DIY',
     },
     {
+      name: "mainImage",
+      type: "mainImage",
+      title: "Image",
+    },
+    {
       name: "excerpt",
       type: "simplePortableText",
       title: "Excerpt",

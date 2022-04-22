@@ -10,9 +10,20 @@ export default {
       title: 'Organization name',
     },
     {
+      name: "mainImage",
+      type: "mainImage",
+      title: "Logo",
+    },
+    {
       name: 'url',
       type: 'url',
       title: 'URL',
+      description: 'URL of the organization',
+    },
+    {
+    name: "description",
+    type: "simplePortableText",
+    title: "Description",
     },
     {
       name: "excerpt",
@@ -33,9 +44,13 @@ export default {
       },
     },
     {
-    name: "description",
-    type: "simplePortableText",
-    title: "Description",
+      title: 'Action',
+      name: 'action',
+      // A reference is a way to point to another document
+      type: 'reference',
+      // This reference is only allowed to point to a document of the type person,
+      // we could list more types, but let's keep this simple:
+      to: [{type: 'action'}]
     },
     {
       name: 'keywords',

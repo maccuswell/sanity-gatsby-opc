@@ -1,18 +1,23 @@
-// action.js
+// organization.js
 export default {
-  name: 'action',
+  name: 'certification',
   type: 'document',
-  title: 'Action',
+  title: 'Certification',
   fields: [
     {
       name: 'name',
       type: 'string',
-      title: 'Action name',
+      title: 'Certification name',
     },
     {
       name: "mainImage",
       type: "mainImage",
-      title: "Image",
+      title: "Logo",
+    },
+    {
+      name: 'url',
+      type: 'url',
+      title: 'URL',
     },
     {
       name: "excerpt",
@@ -26,7 +31,7 @@ export default {
       type: "slug",
       title: "Slug",
       description:
-        "Some frontends will require a slug to be set to be able to show this item.",
+        "Some frontends will require a slug to be set to be able to show the certification",
       options: {
         source: "name",
         maxLength: 96,
@@ -41,7 +46,7 @@ export default {
       name: 'keywords',
       type: 'array',
       title: 'Keywords',
-      description: 'Add keywords that describe the action.',
+      description: 'Add keywords that describe the certification.',
       of: [{ type: 'string' }],
       options: {
         layout: 'tags'

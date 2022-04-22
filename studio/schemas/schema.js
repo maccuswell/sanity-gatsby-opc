@@ -13,11 +13,13 @@ import organization from './documents/organization';
 import diy from './documents/diy';
 import impact from './documents/impact';
 import action from './documents/action';
+import certification from './documents/certification';
 
 
 // Object types
 import bioPortableText from './objects/bioPortableText'
 import figure from './objects/figure'
+import mainImage from './objects/mainImage'
 import projectMember from './objects/projectMember'
 import projectPortableText from './objects/projectPortableText'
 import simplePortableText from './objects/simplePortableText'
@@ -46,6 +48,8 @@ export default createSchema({
     action,
     impact,
     diy,
+    mainImage,
+    certification,
     siteSettings
   ])
 })
